@@ -8,6 +8,8 @@ const FileUpload = ({ onUploadSuccess }) => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const fileInputRef = useRef(null);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
     if (selectedFile) {
@@ -74,7 +76,7 @@ const FileUpload = ({ onUploadSuccess }) => {
       });
     }, 200);
 
-    fetch("http://127.0.0.1:5000/api/upload", {
+    fetch(`${API_URL}/upload`, {
       method: "POST",
       body: formData,
     })

@@ -5,6 +5,8 @@ import FileUpload from "../components/FileUpload";
 const Home = () => {
   const navigate = useNavigate();
 
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   const handleUploadSuccess = () => {
     navigate("/results");
   };

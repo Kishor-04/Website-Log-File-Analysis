@@ -11,9 +11,9 @@ app = Flask(__name__)
 CORS(app)  # ✅ Enable CORS for all routes
 
 # Path to the trained model
-MODEL_PATH = "../Model/anomaly_detection_model.pkl"
-UPLOAD_FOLDER = "../logs/"
-RESULTS_FILE = "../logs/anomaly_results.csv"
+MODEL_PATH = "./Model/anomaly_detection_model.pkl"
+UPLOAD_FOLDER = "./logs/"
+RESULTS_FILE = "./logs/anomaly_results.csv"
 
 # Load the trained model
 with open(MODEL_PATH, 'rb') as file:

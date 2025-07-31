@@ -26,13 +26,15 @@ const Results = () => {
   const [selectedView, setSelectedView] = useState('overview');
   const [summary, setSummary] = useState({});
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     fetchResults();
   }, []);
 
   const fetchResults = () => {
     setLoading(true);
-    fetch("http://127.0.0.1:5000/api/results")
+    fetch(`${API_URL}/results`)
       .then((response) => response.json())
       .then((data) => {
         setResults(data);

@@ -710,4 +710,4 @@ const ResultsTable = ({ data }) => {
   );
 };
 
-export default ResultsTable;
+export default ResultsTable;4
