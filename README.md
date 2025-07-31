@@ -72,7 +72,7 @@ project-root/
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/Kishor-04/web-log-analyzer.git
+    git clone https://github.com/Kishor-04/Website-Log-File-Analysis.git
     cd web-log-analyzer
     ```
 
